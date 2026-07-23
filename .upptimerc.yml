@@ -1,31 +1,32 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# HostInRegola uptime + status — Upptime (https://upptime.js.org)
+# Watches the LIVE app from outside our own infrastructure; a failed check auto-opens a GitHub
+# issue assigned below. No server, no cost: GitHub Actions + Issues + Pages only.
+owner: rokcebron-cpu
+repo: hostinregola-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: App — login
+    url: https://hostinregola.vercel.app/login
+  - name: App — root
+    url: https://hostinregola.vercel.app
+  - name: Cron endpoint auth guard (401 atteso)
+    # The scheduled-jobs endpoint must EXIST and must REFUSE unauthenticated calls — a 401 here is
+    # the healthy state (proves both reachability and the bearer guard in one check).
+    url: https://hostinregola.vercel.app/api/cron/tick
+    expectedStatusCodes:
+      - 401
+
+assignees:
+  - rokcebron-cpu
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # No custom domain — served from GitHub Pages under the repo path.
+  baseUrl: /hostinregola-status
+  name: HostInRegola — stato del servizio
+  introTitle: "Stato del servizio **HostInRegola**"
+  introMessage: Controlli automatici ogni 5 minuti dall'esterno della nostra infrastruttura. Cronologia completa e trasparente qui sotto.
   navbar:
-    - title: Status
+    - title: Stato
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
