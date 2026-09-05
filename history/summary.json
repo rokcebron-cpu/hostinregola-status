@@ -1,5 +1,23 @@
 [
   {
+    "name": "App — database and login service",
+    "url": "https://hostinregola.vercel.app/api/health/ready",
+    "icon": "https://icons.duckduckgo.com/ip3/hostinregola.vercel.app.ico",
+    "slug": "app-database-and-login-service",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 1433,
+    "timeDay": 1433,
+    "timeWeek": 1433,
+    "timeMonth": 1433,
+    "timeYear": 1433,
+    "dailyMinutesDown": {}
+  },
+  {
     "name": "App — login",
     "url": "https://hostinregola.vercel.app/login",
     "icon": "https://icons.duckduckgo.com/ip3/hostinregola.vercel.app.ico",
@@ -12,7 +30,7 @@
     "uptimeYear": "100.00%",
     "time": 880,
     "timeDay": 0,
-    "timeWeek": 937,
+    "timeWeek": 942,
     "timeMonth": 851,
     "timeYear": 880,
     "dailyMinutesDown": {}
@@ -30,7 +48,7 @@
     "uptimeYear": "100.00%",
     "time": 1153,
     "timeDay": 0,
-    "timeWeek": 1180,
+    "timeWeek": 1166,
     "timeMonth": 1219,
     "timeYear": 1153,
     "dailyMinutesDown": {}
@@ -48,7 +66,7 @@
     "uptimeYear": "100.00%",
     "time": 626,
     "timeDay": 0,
-    "timeWeek": 571,
+    "timeWeek": 501,
     "timeMonth": 571,
     "timeYear": 626,
     "dailyMinutesDown": {}
