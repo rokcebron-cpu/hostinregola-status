@@ -4,6 +4,8 @@
 owner: rokcebron-cpu
 repo: hostinregola-status
 
+# Public checks need no contextual secrets; GH_PAT is supplied separately.
+secrets: []
 
 sites:
   - name: App — database and login service
@@ -21,10 +23,8 @@ sites:
     expectedStatusCodes:
       - 401
 
-
 assignees:
   - rokcebron-cpu
-
 
 status-website:
   # No custom domain — served from GitHub Pages under the repo path.
@@ -34,7 +34,3 @@ status-website:
   introMessage: Controlli automatici ogni 5 minuti dall'esterno della nostra infrastruttura. Cronologia completa e trasparente qui sotto.
   navbar:
     - title: Stato
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
