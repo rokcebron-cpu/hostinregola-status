@@ -4,7 +4,12 @@
 owner: rokcebron-cpu
 repo: hostinregola-status
 
+
 sites:
+  - name: App — database and login service
+    url: https://hostinregola.vercel.app/api/health/ready
+    expectedStatusCodes:
+      - 200
   - name: App — login
     url: https://hostinregola.vercel.app/login
   - name: App — root
@@ -16,8 +21,10 @@ sites:
     expectedStatusCodes:
       - 401
 
+
 assignees:
   - rokcebron-cpu
+
 
 status-website:
   # No custom domain — served from GitHub Pages under the repo path.
@@ -30,3 +37,4 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+
