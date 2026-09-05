@@ -34,6 +34,6 @@ status-website:
   introMessage: Controlli automatici programmati ogni 5 minuti. GitHub può ritardarne l’esecuzione. Ultimi risultati e cronologia qui sotto.
   navbar:
     - title: Stato
-      href: /
+      href: /hostinregola-status/
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
