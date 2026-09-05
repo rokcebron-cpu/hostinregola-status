@@ -31,6 +31,9 @@ status-website:
   baseUrl: /hostinregola-status
   name: HostInRegola — stato del servizio
   introTitle: "Stato del servizio **HostInRegola**"
-  introMessage: Controlli automatici ogni 5 minuti dall'esterno della nostra infrastruttura. Cronologia completa e trasparente qui sotto.
+  introMessage: Controlli automatici programmati ogni 5 minuti. GitHub può ritardarne l’esecuzione. Ultimi risultati e cronologia qui sotto.
   navbar:
     - title: Stato
+      href: /
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
