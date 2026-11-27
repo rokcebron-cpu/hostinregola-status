@@ -1,7 +1,7 @@
 url: https://hostinregola.vercel.app/api/health/ready
 status: up
 code: 200
-responseTime: 429
-lastUpdated: 2026-11-26T04:47:58.478Z
+responseTime: 1905
+lastUpdated: 2026-11-27T04:52:30.015Z
 startTime: 2026-09-05T06:20:38.894Z
 generator: Upptime <https://github.com/upptime/upptime>
